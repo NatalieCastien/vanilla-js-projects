@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #d4e6ed;
+  font-family: "Nanum Gothic", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  color: black;
+}
+
+.screen {
+  width: 50%;
+  cursor: pointer;
+  background-color: black;
+  border-radius: 10px 10px 0 0;
+}
+.controls {
+  background-color: #3a3a3a;
+  color: white;
+  width: 50%;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+}
+.controls .btn {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  margin: 0 2px;
+}
+.controls .btn:focus {
+  outline: none;
+}
+.controls .btn:active {
+  font-size: 1rem;
+  transform: scale(0.9);
+}
+.controls .fa-stop {
+  color: #ae0a0a;
+  margin-right: 5px;
+}
+.controls .fa-play {
+  color: #1bd36f;
+}
+.controls .fa-pause {
+  color: white;
+}
+.controls .timestamp {
+  color: white;
+  margin-left: 10px;
+}
+@media (max-width: 800px) {
+  .screen,
+  .controls {
+    width: 90%;
+  }
+}
